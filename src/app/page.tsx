@@ -31,7 +31,7 @@ const Home = () => {
     telephone: '+380938839926',
     image: {
       '@type': 'ImageObject',
-      url: 'https://larindmitry.github.io/cv/images/profile.jpeg',
+      url: 'https://larindmitry.github.io/cv/images/profile.jpg',
       caption: 'Larin Dmytro - Tech Lead Front-End',
     },
     sameAs: ['https://www.linkedin.com/in/larindmitriy/', 'https://github.com/LarinDmitry'],

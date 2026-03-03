@@ -99,7 +99,7 @@ export const metadata: Metadata = {
     siteName: 'Larin Dmytro - Tech Lead Front-End Portfolio',
     images: [
       {
-        url: 'https://larindmitry.github.io/cv/images/profile.jpeg',
+        url: 'https://larindmitry.github.io/cv/images/profile.jpg',
         width: 1200,
         height: 630,
         alt: 'Larin Dmytro - Tech Lead Front-End specializing in React and TypeScript',
@@ -110,7 +110,7 @@ export const metadata: Metadata = {
     card: 'summary_large_image',
     title: 'Larin Dmytro | Tech Lead Front-End - React & TypeScript',
     description: `${yearsOfExperience}+ years experience. React and TypeScript. Available for hire in Ukraine.`,
-    images: ['https://larindmitry.github.io/cv/images/profile.jpeg'],
+    images: ['https://larindmitry.github.io/cv/images/profile.jpg'],
   },
   robots: {
     index: true,

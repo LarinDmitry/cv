@@ -1,10 +1,15 @@
-"use client";
-import { useEffect, useState } from "react";
-import { motion, AnimatePresence } from "framer-motion";
-import Image from "next/image";
+'use client';
+import {useEffect, useState} from 'react';
+import {motion, AnimatePresence} from 'framer-motion';
+import Image from 'next/image';
 
-// Floating particle component
-const FloatingParticle = ({ delay, duration, size, x, y }: {
+const FloatingParticle = ({
+  delay,
+  duration,
+  size,
+  x,
+  y,
+}: {
   delay: number;
   duration: number;
   size: number;
@@ -13,7 +18,7 @@ const FloatingParticle = ({ delay, duration, size, x, y }: {
 }) => (
   <motion.div
     className="absolute rounded-full bg-violet-500/30"
-    style={{ width: size, height: size }}
+    style={{width: size, height: size}}
     initial={{
       x,
       y,
@@ -29,37 +34,35 @@ const FloatingParticle = ({ delay, duration, size, x, y }: {
       duration,
       repeat: Infinity,
       delay,
-      ease: "easeOut",
+      ease: 'easeOut',
     }}
   />
 );
 
-// Text shimmer animation
-const ShimmerText = ({ children }: { children: string }) => (
+const ShimmerText = ({children}: {children: string}) => (
   <motion.span
     className="relative inline-block"
     animate={{
-      backgroundPosition: ["0% 50%", "100% 50%", "0% 50%"],
+      backgroundPosition: ['0% 50%', '100% 50%', '0% 50%'],
     }}
-    transition={{ duration: 3, repeat: Infinity }}
+    transition={{duration: 3, repeat: Infinity}}
     style={{
-      backgroundImage: "linear-gradient(90deg, #c4b5fd, #a78bfa, #8b5cf6, #a78bfa, #c4b5fd)",
-      backgroundSize: "200% 100%",
-      WebkitBackgroundClip: "text",
-      WebkitTextFillColor: "transparent",
+      backgroundImage: 'linear-gradient(90deg, #c4b5fd, #a78bfa, #8b5cf6, #a78bfa, #c4b5fd)',
+      backgroundSize: '200% 100%',
+      WebkitBackgroundClip: 'text',
+      WebkitTextFillColor: 'transparent',
     }}
   >
     {children}
   </motion.span>
 );
 
-export default function PageLoader() {
-  const [isLoading, setIsLoading] = useState(true);
-  const [progress, setProgress] = useState(0);
-  const [dimensions, setDimensions] = useState({ width: 0, height: 0 });
+const PageLoader = () => {
+  const [isLoading, setIsLoading] = useState<boolean>(true);
+  const [progress, setProgress] = useState<number>(0);
+  const [dimensions, setDimensions] = useState<{width: number; height: number}>({width: 0, height: 0});
 
   useEffect(() => {
-    // Set dimensions after component mounts (client-side only)
     setDimensions({
       width: window.innerWidth,
       height: window.innerHeight,
@@ -82,9 +85,7 @@ export default function PageLoader() {
     // Complete loading
     const timer = setTimeout(() => {
       setProgress(100);
-      setTimeout(() => {
-        setIsLoading(false);
-      }, 400);
+      setTimeout(() => setIsLoading(false), 400);
     }, 1800);
 
     return () => {
@@ -94,26 +95,29 @@ export default function PageLoader() {
   }, []);
 
   // Generate particles
-  const particles = dimensions.width > 0 ? [...Array(25)].map((_, i) => ({
-    id: i,
-    delay: Math.random() * 2,
-    duration: 2 + Math.random() * 2,
-    size: 2 + Math.random() * 4,
-    x: Math.random() * dimensions.width,
-    y: dimensions.height * 0.5 + Math.random() * dimensions.height * 0.5,
-  })) : [];
+  const particles =
+    dimensions.width > 0
+      ? [...Array(25)].map((_, i) => ({
+          id: i,
+          delay: Math.random() * 2,
+          duration: 2 + Math.random() * 2,
+          size: 2 + Math.random() * 4,
+          x: Math.random() * dimensions.width,
+          y: dimensions.height * 0.5 + Math.random() * dimensions.height * 0.5,
+        }))
+      : [];
 
   return (
     <AnimatePresence>
       {isLoading && (
         <motion.div
-          initial={{ opacity: 1 }}
+          initial={{opacity: 1}}
           exit={{
             opacity: 0,
             scale: 1.05,
-            filter: "blur(10px)",
+            filter: 'blur(10px)',
           }}
-          transition={{ duration: 0.6, ease: "easeInOut" }}
+          transition={{duration: 0.6, ease: 'easeInOut'}}
           className="fixed inset-0 z-50 flex items-center justify-center bg-gradient-to-br from-black via-gray-900 to-black overflow-hidden"
         >
           {/* Animated gradient background */}
@@ -121,13 +125,13 @@ export default function PageLoader() {
             className="absolute inset-0"
             animate={{
               background: [
-                "radial-gradient(circle at 30% 30%, rgba(139, 92, 246, 0.1) 0%, transparent 50%)",
-                "radial-gradient(circle at 70% 70%, rgba(139, 92, 246, 0.1) 0%, transparent 50%)",
-                "radial-gradient(circle at 30% 70%, rgba(139, 92, 246, 0.1) 0%, transparent 50%)",
-                "radial-gradient(circle at 30% 30%, rgba(139, 92, 246, 0.1) 0%, transparent 50%)",
+                'radial-gradient(circle at 30% 30%, rgba(139, 92, 246, 0.1) 0%, transparent 50%)',
+                'radial-gradient(circle at 70% 70%, rgba(139, 92, 246, 0.1) 0%, transparent 50%)',
+                'radial-gradient(circle at 30% 70%, rgba(139, 92, 246, 0.1) 0%, transparent 50%)',
+                'radial-gradient(circle at 30% 30%, rgba(139, 92, 246, 0.1) 0%, transparent 50%)',
               ],
             }}
-            transition={{ duration: 8, repeat: Infinity, ease: "linear" }}
+            transition={{duration: 8, repeat: Infinity, ease: 'linear'}}
           />
 
           {/* Floating particles */}
@@ -140,11 +144,11 @@ export default function PageLoader() {
           {/* Main content */}
           <div className="text-center relative z-10">
             <motion.div
-              initial={{ scale: 0.5, opacity: 0, rotateY: -180 }}
-              animate={{ scale: 1, opacity: 1, rotateY: 0 }}
+              initial={{scale: 0.5, opacity: 0, rotateY: -180}}
+              animate={{scale: 1, opacity: 1, rotateY: 0}}
               transition={{
                 duration: 0.8,
-                type: "spring",
+                type: 'spring',
                 stiffness: 100,
                 damping: 15,
               }}
@@ -154,11 +158,11 @@ export default function PageLoader() {
                 {/* Outer rotating ring */}
                 <motion.div
                   className="absolute inset-0 w-full h-full"
-                  animate={{ rotate: 360 }}
+                  animate={{rotate: 360}}
                   transition={{
                     duration: 4,
                     repeat: Infinity,
-                    ease: "linear",
+                    ease: 'linear',
                   }}
                 >
                   <svg className="w-full h-full" viewBox="0 0 100 100">
@@ -185,11 +189,11 @@ export default function PageLoader() {
                 {/* Second rotating ring (opposite direction) */}
                 <motion.div
                   className="absolute inset-2 w-[calc(100%-16px)] h-[calc(100%-16px)]"
-                  animate={{ rotate: -360 }}
+                  animate={{rotate: -360}}
                   transition={{
                     duration: 6,
                     repeat: Infinity,
-                    ease: "linear",
+                    ease: 'linear',
                   }}
                 >
                   <svg className="w-full h-full" viewBox="0 0 100 100">
@@ -215,7 +219,7 @@ export default function PageLoader() {
                   transition={{
                     duration: 2,
                     repeat: Infinity,
-                    ease: "easeInOut",
+                    ease: 'easeInOut',
                   }}
                 >
                   <div className="w-full h-full rounded-full bg-gradient-to-r from-violet-600/20 to-purple-600/20 blur-xl" />
@@ -233,7 +237,7 @@ export default function PageLoader() {
                       transition={{
                         duration: 2,
                         repeat: Infinity,
-                        ease: "easeInOut",
+                        ease: 'easeInOut',
                       }}
                     />
                     <motion.div
@@ -244,7 +248,7 @@ export default function PageLoader() {
                       transition={{
                         duration: 2,
                         repeat: Infinity,
-                        ease: "easeInOut",
+                        ease: 'easeInOut',
                       }}
                       className="relative z-10"
                     >
@@ -264,9 +268,9 @@ export default function PageLoader() {
 
             {/* Loading text with animations */}
             <motion.div
-              initial={{ opacity: 0, y: 30 }}
-              animate={{ opacity: 1, y: 0 }}
-              transition={{ delay: 0.3, duration: 0.6 }}
+              initial={{opacity: 0, y: 30}}
+              animate={{opacity: 1, y: 0}}
+              transition={{delay: 0.3, duration: 0.6}}
               className="space-y-4"
             >
               <h2 className="text-3xl font-bold">
@@ -275,14 +279,12 @@ export default function PageLoader() {
 
               {/* Animated loading dots */}
               <motion.div className="flex items-center justify-center gap-1">
-                <span className="text-violet-400 text-sm font-medium tracking-wider">
-                  Loading Experience
-                </span>
+                <span className="text-violet-400 text-sm font-medium tracking-wider">Loading Experience</span>
                 {[0, 1, 2].map((i) => (
                   <motion.span
                     key={i}
                     className="text-violet-400 text-sm"
-                    animate={{ opacity: [0, 1, 0] }}
+                    animate={{opacity: [0, 1, 0]}}
                     transition={{
                       duration: 1.2,
                       repeat: Infinity,
@@ -300,36 +302,36 @@ export default function PageLoader() {
                   {/* Glowing background */}
                   <motion.div
                     className="absolute inset-0 bg-violet-500/20 blur-sm"
-                    animate={{ opacity: [0.3, 0.6, 0.3] }}
-                    transition={{ duration: 1.5, repeat: Infinity }}
+                    animate={{opacity: [0.3, 0.6, 0.3]}}
+                    transition={{duration: 1.5, repeat: Infinity}}
                   />
                   {/* Progress fill */}
                   <motion.div
                     className="absolute inset-y-0 left-0 bg-gradient-to-r from-violet-600 via-purple-500 to-violet-600 rounded-full"
-                    initial={{ width: "0%" }}
-                    animate={{ width: `${Math.min(progress, 100)}%` }}
-                    transition={{ duration: 0.2, ease: "easeOut" }}
+                    initial={{width: '0%'}}
+                    animate={{width: `${Math.min(progress, 100)}%`}}
+                    transition={{duration: 0.2, ease: 'easeOut'}}
                   />
                   {/* Shimmer effect on progress */}
                   <motion.div
                     className="absolute inset-y-0 w-20 bg-gradient-to-r from-transparent via-white/30 to-transparent"
-                    animate={{ x: [-80, 320] }}
-                    transition={{ duration: 1.5, repeat: Infinity, ease: "linear" }}
+                    animate={{x: [-80, 320]}}
+                    transition={{duration: 1.5, repeat: Infinity, ease: 'linear'}}
                   />
                 </div>
 
                 {/* Progress percentage with pulse */}
                 <motion.div
                   className="flex justify-between items-center mt-3"
-                  initial={{ opacity: 0 }}
-                  animate={{ opacity: 1 }}
-                  transition={{ delay: 0.5 }}
+                  initial={{opacity: 0}}
+                  animate={{opacity: 1}}
+                  transition={{delay: 0.5}}
                 >
                   <span className="text-gray-500 text-xs">Preparing portfolio</span>
                   <motion.span
                     className="text-violet-400 text-sm font-semibold"
-                    animate={progress === 100 ? { scale: [1, 1.1, 1] } : {}}
-                    transition={{ duration: 0.3 }}
+                    animate={progress === 100 ? {scale: [1, 1.1, 1]} : {}}
+                    transition={{duration: 0.3}}
                   >
                     {Math.round(Math.min(progress, 100))}%
                   </motion.span>
@@ -341,4 +343,6 @@ export default function PageLoader() {
       )}
     </AnimatePresence>
   );
-}
+};
+
+export default PageLoader;
