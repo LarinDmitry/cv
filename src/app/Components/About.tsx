@@ -95,6 +95,15 @@ const About = () => {
     },
   ];
 
+  const handleMarkUp = (start: string, main: string) => (
+    <>
+      {`${start} `}
+      <motion.span className="text-violet-400 font-semibold" whileHover={{scale: 1.05}}>
+        {main}
+      </motion.span>{' '}
+    </>
+  );
+
   return (
     <section
       className="relative w-full md:min-h-screen flex flex-col items-center justify-center py-12 md:py-20 bg-gradient-to-b from-black/80 via-black/80 to-black/80 z-10"
@@ -161,56 +170,47 @@ const About = () => {
               initial="hidden"
               animate={isInView ? 'visible' : 'hidden'}
             >
-              I&apos;m a passionate{' '}
-              <motion.span className="text-violet-400 font-semibold" whileHover={{scale: 1.05}}>
-                Tech Lead Front-End
-              </motion.span>{' '}
-              with over {yearsOfExperience} years of experience turning complex problems into elegant, user-friendly
-              solutions. Currently leading front-end development at{' '}
-              <motion.span className="text-violet-400 font-semibold" whileHover={{scale: 1.05}}>
-                Mascode
-              </motion.span>
-              , where I architect cutting-edge healthcare platforms serving hospitals and clinics worldwide.
+              {handleMarkUp("I'm a", 'Frontend Tech Lead')}
+              {handleMarkUp('with', '~10 years')}
+              {handleMarkUp('in Frontend development,', '~9 years')}
+              {handleMarkUp('working deeply with React,', '~4 years')}
+              {handleMarkUp('leading frontend architecture, and', ' ~1 year')}
+              in a formal Team Lead role.
             </motion.p>
 
             <motion.p
               className="text-lg md:text-xl text-gray-300 leading-relaxed"
-              custom={1}
+              custom={0}
               variants={paragraphVariants}
               initial="hidden"
               animate={isInView ? 'visible' : 'hidden'}
             >
-              My journey in web development is driven by a simple philosophy:{' '}
-              <motion.span
-                className="italic text-violet-300"
-                animate={
-                  isInView
-                    ? {
-                        textShadow: [
-                          '0 0 0px rgba(139, 92, 246, 0)',
-                          '0 0 10px rgba(139, 92, 246, 0.5)',
-                          '0 0 0px rgba(139, 92, 246, 0)',
-                        ],
-                      }
-                    : {}
-                }
-                transition={{duration: 2, repeat: Infinity}}
-              >
-                write code that matters
-              </motion.span>
-              . I believe in creating applications that are not just functional, but delightful to use&mdash;combining
-              clean code with beautiful design to deliver exceptional user experiences.
+              I specialize in building scalable frontend architectures and leading teams that deliver high-impact,
+              production-grade applications. My focus goes beyond writing code — I design systems, define engineering
+              standards, and help teams grow while shipping reliable, high-performance products.
             </motion.p>
 
             <motion.p
               className="text-lg md:text-xl text-gray-300 leading-relaxed"
-              custom={2}
+              custom={0}
               variants={paragraphVariants}
               initial="hidden"
               animate={isInView ? 'visible' : 'hidden'}
             >
-              Whether it&apos;s building dynamic React applications, optimizing performance, or mentoring team members,
-              I&apos;m committed to continuous learning and pushing the boundaries of what&apos;s possible on the web.
+              Throughout my career, I’ve worked on complex web platforms where architecture decisions directly
+              influenced business outcomes. I believe strong frontend leadership is a balance of technical excellence,
+              product thinking, and mentorship.
+            </motion.p>
+
+            <motion.p
+              className="text-lg md:text-xl text-gray-300 leading-relaxed"
+              custom={0}
+              variants={paragraphVariants}
+              initial="hidden"
+              animate={isInView ? 'visible' : 'hidden'}
+            >
+              Whether it’s shaping technical strategy, optimizing performance, improving developer experience, or
+              guiding engineers through growth paths, I aim to build systems — and teams — that scale.
             </motion.p>
           </div>
 

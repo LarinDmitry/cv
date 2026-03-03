@@ -9,7 +9,7 @@ const roboto = Roboto({subsets: ['latin'], weight: ['400', '700', '900']});
 const yearsOfExperience = getTotalYearsOfExperience();
 
 export const metadata: Metadata = {
-  title: 'Hire Larin Dmytro | Tech Lead Front-End & React Expert - Ukraine, Kiev',
+  title: 'Larin Dmytro | Tech Lead Front-End & React Expert - Ukraine, Kiev',
   description: `Tech Lead Front-End with ${yearsOfExperience}+ years building enterprise web applications. Expert in React and TypeScript. Available for hire in Ukraine, Kiev. Specializing in fintech and enterprise software. Open to remote and on-site opportunities.`,
   keywords: [
     'front-end developer',
@@ -94,7 +94,7 @@ export const metadata: Metadata = {
     type: 'profile',
     locale: 'en_IE',
     url: 'https://larindmitry.github.io/cv/',
-    title: 'Hire Larin Dmytro | Tech Lead Front-End - React and TypeScript Expert',
+    title: 'Larin Dmytro | Tech Lead Front-End - React and TypeScript Expert',
     description: `Tech Lead Front-End with ${yearsOfExperience}+ years of experience. React and TypeScript expert. Available for hire in Ukraine, Kiev. Open to remote opportunities.`,
     siteName: 'Larin Dmytro - Tech Lead Front-End Portfolio',
     images: [

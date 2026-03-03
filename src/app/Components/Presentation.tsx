@@ -204,10 +204,11 @@ const Presentation = () => {
             >
               <ReactTyped
                 strings={[
-                  'I enjoy building and designing for the web.',
-                  'Front-End Specialist.',
-                  'Creating exceptional user experiences.',
-                  'Passionate about modern web technologies.',
+                  'Scalable architecture and high-performance web apps.',
+                  'Performance, quality and developer experience advocate.',
+                  'Modern React, clean architecture and mentorship.',
+                  'Product-driven frontend leadership.',
+                  'From architecture decisions to team growth.',
                 ]}
                 typeSpeed={70}
                 backDelay={1000}

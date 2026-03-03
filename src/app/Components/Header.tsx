@@ -207,8 +207,8 @@ const Header = () => {
                         <Image
                           src="/images/logo.webp"
                           alt="Larin Dmytro"
-                          height={40}
-                          width={40}
+                          height={50}
+                          width={50}
                           className="rounded-lg"
                         />
                       </motion.div>
