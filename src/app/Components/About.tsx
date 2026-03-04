@@ -57,41 +57,41 @@ const About = () => {
 
   const industries = [
     {
-      title: 'Healthcare',
-      description: 'Patient management systems, medical scheduling platforms, and healthcare data visualization tools.',
-      logos: [{src: '/images/mypatientspace.png', alt: 'Mascode'}],
-    },
-    {
-      title: 'Payment Solutions',
+      title: 'Criminal Proceedings',
       description:
-        'Secure payment gateways, transaction processing systems, and fintech applications with PCI compliance.',
+        'Specialized system for automate processes of pre-trial investigation, analytics and data exchange in criminal proceedings',
+      logos: [{src: '/images/smereka.png', alt: 'Smereka'}],
+    },
+    {
+      title: 'E-commerce',
+      description:
+        'Platforms that helps international businesses overcome cross-border barriers and increase revenue in new markets.',
       logos: [
-        {src: '/images/dexian.png', alt: 'Dexian'},
-        {src: '/images/getnet.png', alt: 'Getnet'},
+        {src: '/images/blend.png', alt: 'Blend'},
+        {src: '/images/subj.png', alt: 'Subj'},
       ],
     },
     {
-      title: 'Social Platforms',
-      description: 'Project collaboration platforms, social networking features, and community engagement tools.',
-      logos: [{src: '/images/incentiv.png', alt: 'Incentiv'}],
+      title: 'DevSecOps',
+      description:
+        'Tools empowers teams to proactively manage risk, accelerate DevSecOps, and enforce compliance across cloud envs.',
+      logos: [{src: '/images/rapid7.png', alt: 'Rapid7'}],
     },
     {
-      title: 'Accounting',
-      description: 'Financial management systems, bookkeeping applications, and automated accounting workflows.',
-      logos: [{src: '/images/qyon.jpg', alt: 'QYON'}],
+      title: 'FoodTech',
+      description: 'Food service establishments that automates and speeds up the work of cafes and restaurants.',
+      logos: [{src: '/images/vaiter.webp', alt: 'Vaiter'}],
     },
     {
-      title: 'Tax Management',
-      description: 'Tax calculation engines, compliance reporting tools, and automated tax filing systems.',
-      logos: [
-        {src: '/images/essystem.jpg', alt: 'ESSystem'},
-        {src: '/images/qyon.jpg', alt: 'QYON'},
-      ],
+      title: 'FinTech',
+      description: 'End-to-end banking infrastructure with advanced credit flows with optimizing lending funnels.',
+      logos: [{src: '/images/money.png', alt: 'Money'}],
     },
     {
-      title: 'Payroll Systems',
-      description: 'Employee payroll processing, time tracking integration, and benefits administration platforms.',
-      logos: [{src: '/images/qyon.jpg', alt: 'QYON'}],
+      title: 'SoftTech',
+      description:
+        'Unique technological solutions that facilitate digital transformation, security, and business automation.',
+      logos: [{src: '/images/inlimited.png', alt: 'Inlimited'}],
     },
   ];
 
@@ -173,8 +173,8 @@ const About = () => {
               {handleMarkUp("I'm a", 'Frontend Tech Lead')}
               {handleMarkUp('with', '~10 years')}
               {handleMarkUp('in Frontend development,', '~9 years')}
-              {handleMarkUp('working deeply with React,', '~4 years')}
-              {handleMarkUp('leading frontend architecture, and', ' ~1 year')}
+              {handleMarkUp('working deeply with React, where ', '~4 years')}
+              {handleMarkUp('React frontend Tech Lead, and', ' ~1 year')}
               in a formal Team Lead role.
             </motion.p>
 
@@ -270,7 +270,12 @@ const About = () => {
                           }}
                           whileHover={{scale: 1.15, rotate: 5}}
                         >
-                          <Image src={logo.src} alt={logo.alt} fill className="object-contain p-2 rounded-full" />
+                          <Image
+                            src={logo.src}
+                            alt={logo.alt}
+                            fill
+                            className="object-contain p-2 rounded-full border border-white"
+                          />
                         </motion.div>
                       ))}
                     </div>

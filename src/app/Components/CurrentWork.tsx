@@ -178,7 +178,7 @@ const CurrentWork = () => {
                 }}
               />
               <Image
-                src="/images/mypatientspace.png"
+                src="/images/mascode.png"
                 alt="Mascode"
                 width={160}
                 height={160}
@@ -237,7 +237,7 @@ const CurrentWork = () => {
             animate={isInView ? {opacity: 1, y: 0} : {}}
             transition={{delay: 0.5, duration: 0.5}}
           >
-            Ukraine, Kiev • April 2024 - Present • Hybrid
+            Ukraine, Kiev • June 2023 - Present • Remote
           </motion.p>
 
           {/* Description with fade-in */}

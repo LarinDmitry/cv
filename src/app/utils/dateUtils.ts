@@ -15,5 +15,5 @@ export const calculateYearsOfExperience = (startDate: string): number => {
  * Get the total years of professional experience
  * Based on start date: January 2018
  */
-export const getTotalYearsOfExperience = (): number => calculateYearsOfExperience('2018-01-01');
+export const getTotalYearsOfExperience = (): number => calculateYearsOfExperience('2016-01-01');
 

@@ -27,15 +27,15 @@ const Projects = () => {
   const projects = [
     {
       name: 'Mascode',
-      icon: '/images/mypatientspace.png',
+      icon: '/images/vaiter.webp',
       description:
         'A leading Irish digital health company powering connected patient solutions for global health systems, providers and bio-pharma & med-tech companies.',
-      url: 'https://www.mypatientspace.com',
-      tags: ['Front-End Lead', 'React', 'Healthcare'],
+      url: 'https://vaiter.app',
+      tags: ['Tech Lead', 'React', 'Food'],
     },
     {
       name: 'Incentiv.me',
-      icon: '/images/incentiv.png',
+      icon: '/images/vaiter.webp',
       description:
         'Developed an ecosystem platform connecting businesses and socio-environmental projects through fiscal incentive laws, creating positive social impact.',
       url: 'https://incentiv.me',
@@ -43,7 +43,7 @@ const Projects = () => {
     },
     {
       name: 'Santander Getnet',
-      icon: '/images/getnet.png',
+      icon: '/images/vaiter.webp',
       description:
         "Built innovative payment solutions for PagoNxt, Santander's global paytech business, providing integrated payment processing and financial services.",
       url: 'https://www.santander.com/en/about-us/where-we-are/pagonxt',
@@ -51,7 +51,7 @@ const Projects = () => {
     },
     {
       name: 'QYON',
-      icon: '/images/qyon.jpg',
+      icon: '/images/vaiter.webp',
       description:
         'Developed AI-powered business management solutions integrating artificial intelligence across all enterprise processes and sectors.',
       url: 'https://qyon.com/',

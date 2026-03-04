@@ -113,19 +113,19 @@ const Stats = () => {
     },
     {
       icon: <AcademicCapIcon className="w-12 h-12 text-violet-400" />,
-      value: 11,
-      label: 'Certificates',
+      value: 4,
+      label: 'Tech Leadership',
       suffix: '+',
     },
     {
       icon: <CodeBracketIcon className="w-12 h-12 text-violet-400" />,
-      value: 20,
+      value: 30,
       label: 'Technologies Mastered',
       suffix: '+',
     },
     {
       icon: <RocketLaunchIcon className="w-12 h-12 text-violet-400" />,
-      value: 50,
+      value: 20,
       label: 'Projects Contributed',
       suffix: '+',
     },

@@ -9,7 +9,7 @@ import {motion, useInView, useAnimation} from 'framer-motion';
 const experiencesData = [
   {
     date: 'Apr 2024 - Present',
-    icon: <Image className="rounded-full" src="/images/mypatientspace.png" width={100} height={100} alt="Mascode" />,
+    icon: <Image className="rounded-full" src="/images/vaiter.webp" width={100} height={100} alt="Mascode" />,
     title: 'Tech Lead Front-End',
     location: 'Mascode - Ukraine, Kiev',
     description:
@@ -18,7 +18,7 @@ const experiencesData = [
   },
   {
     date: 'Jan 2022 - Dec 2023',
-    icon: <Image className="rounded-full" src="/images/dexian.png" width={100} height={100} alt="Dexian" />,
+    icon: <Image className="rounded-full" src="/images/vaiter.webp" width={100} height={100} alt="Dexian" />,
     title: 'Tech Lead Front-End',
     location: 'DISYS - Americana/SP, Brazil',
     description:
@@ -27,7 +27,7 @@ const experiencesData = [
   },
   {
     date: 'Mar 2021 - Dec 2022',
-    icon: <Image className="rounded-full" src="/images/qyon.jpg" width={100} height={100} alt="QYON" />,
+    icon: <Image className="rounded-full" src="/images/vaiter.webp" width={100} height={100} alt="QYON" />,
     title: 'Tech Lead Front-End',
     location: 'QYON Sistemas Inteligentes - Americana/SP, Brazil',
     description:
@@ -36,7 +36,7 @@ const experiencesData = [
   },
   {
     date: 'May 2020 - Mar 2021',
-    icon: <Image className="rounded-full" src="/images/incentiv.png" width={100} height={100} alt="Incentiv.me" />,
+    icon: <Image className="rounded-full" src="/images/vaiter.webp" width={100} height={100} alt="Incentiv.me" />,
     title: 'Full Stack Developer',
     location: 'Incentiv.me - Florianópolis/SC, Brazil',
     description:
@@ -45,7 +45,7 @@ const experiencesData = [
   },
   {
     date: 'Apr 2019 - May 2020',
-    icon: <Image className="rounded-full" src="/images/essystem.jpg" width={100} height={100} alt="Essystem" />,
+    icon: <Image className="rounded-full" src="/images/vaiter.webp" width={100} height={100} alt="Essystem" />,
     title: 'Javascript Developer JR / Infrastructure Technician',
     location: 'Essystem Comercial Automation - Americana/SP, Brazil',
     description:

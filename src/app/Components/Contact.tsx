@@ -1,5 +1,6 @@
 'use client';
-import {faLinkedin, faSquareGithub, faWhatsapp} from '@fortawesome/free-brands-svg-icons';
+
+import {faLinkedin, faSquareGithub, faTelegram} from '@fortawesome/free-brands-svg-icons';
 import {FontAwesomeIcon} from '@fortawesome/react-fontawesome';
 import {
   PhoneIcon,
@@ -246,7 +247,7 @@ const Contact = () => {
                   </motion.div>
                   <div className="min-w-0">
                     <p className="text-xs md:text-sm text-gray-400 font-medium flex items-center gap-2">
-                      Phone <FontAwesomeIcon icon={faWhatsapp} className="text-green-500" />
+                      Phone <FontAwesomeIcon icon={faTelegram} className="text-blue-500" />
                     </p>
                     <p className="text-base md:text-lg text-white font-semibold group-hover:text-violet-400 transition-colors truncate">
                       +380 93 883 9926
@@ -384,8 +385,8 @@ const Contact = () => {
                 whileHover={{
                   scale: 1.1,
                   y: -5,
-                  borderColor: 'rgb(34, 197, 94)',
-                  boxShadow: '0 10px 30px rgba(34, 197, 94, 0.3)',
+                  borderColor: 'rgb(59, 130, 246)',
+                  boxShadow: '0 10px 30px rgba(59, 130, 246, 0.3)',
                 }}
                 whileTap={{scale: 0.95}}
               >
@@ -396,8 +397,8 @@ const Contact = () => {
                   transition={{duration: 0.5}}
                 />
                 <FontAwesomeIcon
-                  icon={faWhatsapp}
-                  className="relative z-10 text-green-500 group-hover:text-green-400 transition-colors"
+                  icon={faTelegram}
+                  className="relative z-10 text-blue-500 group-hover:text-blue-500 transition-colors"
                   fontSize={28}
                 />
               </motion.button>
