@@ -27,7 +27,7 @@ const Projects = () => {
   const projects = [
     {
       name: 'Smereka (MVP)',
-      icon: '/images/smereka.png',
+      icon: '/cv/images/smereka.png',
       description:
         "Specialized information and communication system implemented in the prosecutor's office and law enforcement agencies of Ukraine for electronic management of criminal proceedings",
       url: 'https://front-dev.k8s-dev.deving.eu/',
@@ -35,14 +35,14 @@ const Projects = () => {
     },
     {
       name: 'Vaiter',
-      icon: '/images/vaiter.webp',
+      icon: '/cv/images/vaiter.webp',
       description: 'Food service establishments that automates and speeds up the work of cafes and restaurants',
       url: 'https://vaiter.app/',
       tags: ['Tech Lead', 'React', 'RTK', 'TypeScript',  'Vite', 'FoodTech'],
     },
     {
       name: 'Blend ',
-      icon: '/images/blend.png',
+      icon: '/cv/images/blend.png',
       description:
         'An international company providing comprehensive services for localization, translation, and adaptation of content for global brands',
       url: 'https://app.getblend.com/',
@@ -50,7 +50,7 @@ const Projects = () => {
     },
     {
       name: 'Rapid7',
-      icon: '/images/rapid7.png',
+      icon: '/cv/images/rapid7.png',
       description:
         'Tools empowers teams to proactively manage risk, accelerate DevSecOps, and enforce compliance across cloud envs',
       url: 'https://www.rapid7.com/products/insightcloudsec/',

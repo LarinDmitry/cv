@@ -253,7 +253,7 @@ const PageLoader = () => {
                       className="relative z-10"
                     >
                       <Image
-                        src="/images/logo.webp"
+                        src="/cv/images/logo.webp"
                         alt="Larin Dmytro"
                         width={80}
                         height={80}

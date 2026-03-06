@@ -205,7 +205,7 @@ const Header = () => {
                     >
                       <motion.div whileHover={{rotate: [0, -10, 10, 0]}} transition={{duration: 0.4}}>
                         <Image
-                          src="/images/logo.webp"
+                          src="/cv/images/logo.webp"
                           alt="Larin Dmytro"
                           height={50}
                           width={50}

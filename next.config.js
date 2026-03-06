@@ -4,6 +4,7 @@ const nextConfig = {
   // Commit two points for local start
   output: 'export',
   basePath: '/cv',
+  trailingSlash: true,
   images: {
     unoptimized: true,
   },

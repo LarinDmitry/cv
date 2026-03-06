@@ -10,7 +10,7 @@ const Footer = () => (
           <div className="relative">
             <div className="absolute inset-0 bg-violet-600/20 rounded-lg blur-md group-hover:bg-violet-600/30 transition-all duration-300"></div>
             <Image
-              src="/images/logo.webp"
+              src="/cv/images/logo.webp"
               alt="Larin Dmytro"
               height={48}
               width={48}
@@ -44,7 +44,7 @@ const Footer = () => (
                 alt="Next.js"
                 width={32}
                 height={32}
-                src="/images/nextjs.svg"
+                src="/cv/images/nextjs.svg"
                 className="invert opacity-90 hover:opacity-100 transition-opacity duration-300"
               />
             </a>
@@ -59,7 +59,7 @@ const Footer = () => (
                 alt="Tailwind CSS"
                 width={28}
                 height={28}
-                src="/images/tailwind.svg"
+                src="/cv/images/tailwind.svg"
                 className="opacity-90 hover:opacity-100 transition-opacity duration-300"
               />
             </a>

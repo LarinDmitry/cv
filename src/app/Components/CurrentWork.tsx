@@ -183,7 +183,7 @@ const CurrentWork = () => {
                 }}
               />
               <Image
-                src="/images/mascode.png"
+                src="/cv/images/mascode.png"
                 alt="Mascode"
                 width={160}
                 height={160}

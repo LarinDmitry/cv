@@ -130,7 +130,7 @@ const Presentation = () => {
             >
               <Image
                 className="relative rounded-full border-4 border-violet-500 shadow-2xl shadow-violet-900/50"
-                src="/images/profile.jpg"
+                src="/cv/images/profile.jpg"
                 alt="Larin Dmytro"
                 height={240}
                 width={240}

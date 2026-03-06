@@ -58,38 +58,38 @@ const About = () => {
       title: 'GovTech',
       description:
         'Specialized system for automate processes of pre-trial investigation, analytics and data exchange in criminal proceedings',
-      logos: [{src: '/images/smereka.png', alt: 'Smereka'}],
+      logos: [{src: '/cv/images/smereka.png', alt: 'Smereka'}],
     },
     {
       title: 'E-commerce',
       description:
         'Platforms that helps international businesses overcome cross-border barriers and increase revenue in new markets.',
       logos: [
-        {src: '/images/blend.png', alt: 'Blend'},
-        {src: '/images/subj.png', alt: 'Subj'},
+        {src: '/cv/images/blend.png', alt: 'Blend'},
+        {src: '/cv/images/subj.png', alt: 'Subj'},
       ],
     },
     {
       title: 'DevSecOps',
       description:
         'Tools empowers teams to proactively manage risk, accelerate DevSecOps, and enforce compliance across cloud envs.',
-      logos: [{src: '/images/rapid7.png', alt: 'Rapid7'}],
+      logos: [{src: '/cv/images/rapid7.png', alt: 'Rapid7'}],
     },
     {
       title: 'FoodTech',
       description: 'Food service establishments that automates and speeds up the work of cafes and restaurants.',
-      logos: [{src: '/images/vaiter.webp', alt: 'Vaiter'}],
+      logos: [{src: '/cv/images/vaiter.webp', alt: 'Vaiter'}],
     },
     {
       title: 'FinTech',
       description: 'End-to-end banking infrastructure with advanced credit flows with optimizing lending funnels.',
-      logos: [{src: '/images/money.png', alt: 'Money'}],
+      logos: [{src: '/cv/images/money.png', alt: 'Money'}],
     },
     {
       title: 'SoftTech',
       description:
         'Unique technological solutions that facilitate digital transformation, security, and business automation.',
-      logos: [{src: '/images/inlimited.png', alt: 'Inlimited'}],
+      logos: [{src: '/cv/images/inlimited.png', alt: 'Inlimited'}],
     },
   ];
 

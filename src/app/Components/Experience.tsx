@@ -9,7 +9,7 @@ import {motion, useInView, useAnimation} from 'framer-motion';
 const experiencesData = [
   {
     date: 'Jun, 2023 - Present',
-    icon: <Image className="rounded-full" src="/images/mascode.png" width={100} height={100} alt="Mascode" />,
+    icon: <Image className="rounded-full" src="/cv/images/mascode.png" width={100} height={100} alt="Mascode" />,
     title: 'Tech Lead Front-End',
     location: 'Mascode - Ukraine, Kiev',
     description:
@@ -18,7 +18,7 @@ const experiencesData = [
   },
   {
     date: 'Oct, 2021 - May, 2023',
-    icon: <Image className="rounded-full" src="/images/blend.png" width={100} height={100} alt="Blend" />,
+    icon: <Image className="rounded-full" src="/cv/images/blend.png" width={100} height={100} alt="Blend" />,
     title: 'Tech Lead Front-End',
     location: 'BLEND Localization - Israel, Tel Aviv',
     description:
@@ -27,7 +27,7 @@ const experiencesData = [
   },
   {
     date: 'Oct, 2019 - Jul, 2022',
-    icon: <Image className="rounded-full" src="/images/rapid7.png" width={100} height={100} alt="Rapid7" />,
+    icon: <Image className="rounded-full" src="/cv/images/rapid7.png" width={100} height={100} alt="Rapid7" />,
     title: 'Senior Software Engineer',
     location: 'Rapid7 - Israel, Tel Aviv / USA, Massachusetts',
     description:
@@ -36,7 +36,7 @@ const experiencesData = [
   },
   {
     date: 'Oct, 2018 - Oct, 2019',
-    icon: <Image className="rounded-full" src="/images/lenal.png" width={100} height={100} alt="Lenal" />,
+    icon: <Image className="rounded-full" src="/cv/images/lenal.png" width={100} height={100} alt="Lenal" />,
     title: 'React Front-End Developer',
     location: 'LENAL - Ukraine, Kiev',
     description:
@@ -45,7 +45,7 @@ const experiencesData = [
   },
   {
     date: 'Mar, 2018 - Oct, 2018',
-    icon: <Image className="rounded-full" src="/images/subj.png" width={100} height={100} alt="Subj" />,
+    icon: <Image className="rounded-full" src="/cv/images/subj.png" width={100} height={100} alt="Subj" />,
     title: 'React Front-End Developer',
     location: 'Subj - Ukraine, Kiev',
     description:
@@ -54,7 +54,7 @@ const experiencesData = [
   },
   {
     date: 'Oct, 2017 - Mar, 2018',
-    icon: <Image className="rounded-full" src="/images/inlimited.png" width={100} height={100} alt="Inlimited" />,
+    icon: <Image className="rounded-full" src="/cv/images/inlimited.png" width={100} height={100} alt="Inlimited" />,
     title: 'Web Front-End Developer',
     location: 'Inlimited - Ukraine, Kiev',
     description:

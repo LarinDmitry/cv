@@ -6,9 +6,9 @@
   "type": "module",
   "scripts": {
     "dev": "next dev",
-    "build": "next build",
     "start": "next start",
-    "predeploy": "npm run build",
+    "build": "next build",
+    "predeploy": "echo > out/.nojekyll",
     "deploy": "gh-pages -d out",
     "lint": "next lint"
   },
