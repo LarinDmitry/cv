@@ -380,7 +380,7 @@ const Contact = () => {
 
               <motion.button
                 variants={socialVariants}
-                onClick={() => window.open('https://wa.me/353834329851')}
+                onClick={() => window.open('https://t.me/Larin_Dmytro')}
                 className="relative w-[52px] h-[52px] md:w-[60px] md:h-[60px] flex items-center justify-center bg-gray-700/30 rounded-xl border border-gray-600 overflow-hidden group"
                 whileHover={{
                   scale: 1.1,

@@ -9,7 +9,7 @@
     "start": "next start",
     "build": "next build",
     "predeploy": "echo > out/.nojekyll",
-    "deploy": "gh-pages -d out",
+    "deploy": "gh-pages -d out -t",
     "lint": "next lint"
   },
   "dependencies": {
