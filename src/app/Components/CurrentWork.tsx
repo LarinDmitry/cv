@@ -9,7 +9,8 @@ import {
   UserGroupIcon,
   RocketLaunchIcon,
   ShieldCheckIcon,
-  GlobeAltIcon,
+  ArrowUpRightIcon,
+  BuildingOffice2Icon,
 } from '@heroicons/react/24/outline';
 
 // Highlight card variants with stagger
@@ -65,33 +66,37 @@ const CurrentWork = () => {
       icon: <CodeBracketIcon className="w-8 h-8" />,
       title: 'React Architecture',
       description:
-        'Leading complex React development with modern hooks, state management, and performance optimization',
+        'Designing scalable React architectures, defining patterns, and ensuring long-term maintainability across large applications',
     },
     {
       icon: <SparklesIcon className="w-8 h-8" />,
-      title: 'AI-Powered Development',
+      title: 'AI-Augmented Development',
       description:
-        'Leveraging cutting-edge AI tools including Claude, ChatGPT, Copilot, and more to accelerate development workflows',
+        'Integrating modern AI tools into development workflows to accelerate engineering productivity and innovation',
     },
     {
       icon: <ShieldCheckIcon className="w-8 h-8" />,
-      title: 'Healthcare Solutions',
-      description: 'Building secure healthcare solutions for hospitals and clinics worldwide',
+      title: 'Performance Engineering',
+      description:
+        'Optimizing rendering, bundle size, and runtime performance to ensure responsive and scalable web applications',
     },
     {
       icon: <UserGroupIcon className="w-8 h-8" />,
-      title: 'Team Leadership',
-      description: 'Mentoring developers and establishing best practices for modern web development',
+      title: 'Technical Leadership',
+      description:
+        'Leading front-end teams, mentoring engineers, and establishing engineering standards that enable teams to deliver with confidence',
     },
     {
       icon: <RocketLaunchIcon className="w-8 h-8" />,
-      title: 'Feature Development',
-      description: 'Driving technical excellence through new features and performance improvements',
+      title: 'Platform Development',
+      description:
+        'Building internal platforms, shared component systems, and developer tooling that accelerate product development',
     },
     {
-      icon: <GlobeAltIcon className="w-8 h-8" />,
-      title: 'Multilanguage Platform',
-      description: 'Building a global healthcare solution supporting multiple languages for international users',
+      icon: <BuildingOffice2Icon className="w-8 h-8" />,
+      title: 'Product Engineering',
+      description:
+        'Bridging product vision and engineering execution to deliver reliable and scalable user experiences',
     },
   ];
 
@@ -305,7 +310,7 @@ const CurrentWork = () => {
           transition={{delay: 1.2, duration: 0.5}}
         >
           <motion.a
-            href="https://mypatientspace.com/"
+            href="https://mascode.com/"
             target="_blank"
             rel="noopener noreferrer"
             className="relative inline-flex items-center gap-2 px-8 py-4 bg-violet-900 text-white font-semibold rounded-lg shadow-lg shadow-violet-900/50 overflow-hidden group"
@@ -328,7 +333,7 @@ const CurrentWork = () => {
               animate={{x: [0, 3, 0]}}
               transition={{duration: 1.5, repeat: Infinity}}
             >
-              <GlobeAltIcon className="w-5 h-5" />
+              <ArrowUpRightIcon className="w-5 h-5" />
             </motion.div>
           </motion.a>
         </motion.div>

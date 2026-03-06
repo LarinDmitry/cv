@@ -57,7 +57,7 @@ const About = () => {
 
   const industries = [
     {
-      title: 'Criminal Proceedings',
+      title: 'GovTech',
       description:
         'Specialized system for automate processes of pre-trial investigation, analytics and data exchange in criminal proceedings',
       logos: [{src: '/images/smereka.png', alt: 'Smereka'}],

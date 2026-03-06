@@ -26,36 +26,36 @@ const Projects = () => {
 
   const projects = [
     {
-      name: 'Mascode',
+      name: 'Vaiter',
       icon: '/images/vaiter.webp',
       description:
         'A leading Irish digital health company powering connected patient solutions for global health systems, providers and bio-pharma & med-tech companies.',
-      url: 'https://vaiter.app',
-      tags: ['Tech Lead', 'React', 'Food'],
+      url: 'https://vaiter.app/',
+      tags: ['Tech Lead', 'React', 'GovTech'],
     },
     {
-      name: 'Incentiv.me',
-      icon: '/images/vaiter.webp',
+      name: 'Smereka (MVP)',
+      icon: '/images/smereka.png',
       description:
         'Developed an ecosystem platform connecting businesses and socio-environmental projects through fiscal incentive laws, creating positive social impact.',
-      url: 'https://incentiv.me',
-      tags: ['Full Stack', 'Ruby on Rails', 'React'],
+      url: 'https://front-dev.k8s-dev.deving.eu/',
+      tags: ['Tech Lead', 'React', 'E-commerce'],
     },
     {
-      name: 'Santander Getnet',
-      icon: '/images/vaiter.webp',
+      name: 'Rapid7',
+      icon: '/images/rapid7.png',
       description:
         "Built innovative payment solutions for PagoNxt, Santander's global paytech business, providing integrated payment processing and financial services.",
-      url: 'https://www.santander.com/en/about-us/where-we-are/pagonxt',
-      tags: ['Front-End', 'React', 'Financial'],
+      url: 'https://www.rapid7.com/products/insightcloudsec/',
+      tags: ['Front-End', 'React', 'DevSecOps'],
     },
     {
-      name: 'QYON',
-      icon: '/images/vaiter.webp',
+      name: 'Blend ',
+      icon: '/images/blend.png',
       description:
         'Developed AI-powered business management solutions integrating artificial intelligence across all enterprise processes and sectors.',
-      url: 'https://qyon.com/',
-      tags: ['Front-End', 'React', 'AI/ML'],
+      url: 'https://app.getblend.com/',
+      tags: ['Front-End', 'React', 'E-commerce'],
     },
   ];
 

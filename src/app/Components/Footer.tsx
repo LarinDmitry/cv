@@ -1,10 +1,10 @@
 import Image from 'next/image';
 
 const Footer = () => (
-  <footer className="w-full mt-20 border-t border-gray-800/50 bg-gradient-to-b from-transparent to-black/30">
+  <footer className="w-full mt-20 border-t border-none bg-gradient-to-b from-transparent to-black/30">
     <div className="max-w-7xl mx-auto px-4 pb-8">
       {/* Main Content */}
-      <div className="flex flex-col md:flex-row items-center justify-between gap-8 mb-8">
+      <div className="flex flex-col md:flex-row items-center justify-between gap-8">
         {/* Left Side - Designer Info */}
         <div className="flex items-center gap-4 group">
           <div className="relative">
@@ -23,6 +23,11 @@ const Footer = () => (
               Larin Dmytro
             </strong>
           </div>
+        </div>
+
+        {/* Copyright */}
+        <div className="text-center border-t border-none">
+          <p className="text-gray-500 text-sm">© {new Date().getFullYear()} Larin Dmytro. All rights reserved.</p>
         </div>
 
         {/* Right Side - Tech Stack */}
@@ -60,11 +65,6 @@ const Footer = () => (
             </a>
           </div>
         </div>
-      </div>
-
-      {/* Copyright */}
-      <div className="text-center pt-8 border-t border-gray-800/50">
-        <p className="text-gray-500 text-sm">© {new Date().getFullYear()} Larin Dmytro. All rights reserved.</p>
       </div>
     </div>
   </footer>

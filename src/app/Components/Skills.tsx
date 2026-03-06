@@ -56,11 +56,11 @@ const SkillCard = ({skill, index}: {skill: Skill; index: number}) => {
             />
           </div>
 
-          <h3 className="text-lg font-bold text-white mb-3 group-hover:text-violet-400 transition-colors">
+          <h3 className="text-lg font-bold text-white mb-3 min-h-[5.5rem] xl:min-h-0 group-hover:text-violet-400 transition-colors">
             {skill.name}
           </h3>
 
-          <p className="text-sm text-gray-400">
+          <p className="text-sm text-gray-400 whitespace-nowrap">
             {skill.years} {skill.years === 1 ? 'year' : 'years'} experience
           </p>
         </div>

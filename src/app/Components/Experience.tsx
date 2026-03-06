@@ -8,49 +8,58 @@ import {motion, useInView, useAnimation} from 'framer-motion';
 
 const experiencesData = [
   {
-    date: 'Apr 2024 - Present',
-    icon: <Image className="rounded-full" src="/images/vaiter.webp" width={100} height={100} alt="Mascode" />,
+    date: 'Jun, 2023 - Present',
+    icon: <Image className="rounded-full" src="/images/mascode.png" width={100} height={100} alt="Mascode" />,
     title: 'Tech Lead Front-End',
     location: 'Mascode - Ukraine, Kiev',
     description:
       'Working as a lead Front-end specialist with the React stack, developing new features, implementing improvements, and solving bugs for a healthcare platform used by hospitals and clinics. Proficient with AI tools such as Claude code assistant, and similar technologies. My routine includes attending meetings, understanding the customer requirements, and collaborating with the team to find the best approach for each situation.',
-    url: 'https://www.mypatientspace.com/',
+    url: 'https://mascode.com/',
   },
   {
-    date: 'Jan 2022 - Dec 2023',
-    icon: <Image className="rounded-full" src="/images/vaiter.webp" width={100} height={100} alt="Dexian" />,
+    date: 'Oct, 2021 - May, 2023',
+    icon: <Image className="rounded-full" src="/images/blend.png" width={100} height={100} alt="Blend" />,
     title: 'Tech Lead Front-End',
-    location: 'DISYS - Americana/SP, Brazil',
+    location: 'BLEND Localization - Israel, Tel Aviv',
     description:
       'Working at the external client Pagonxt (a global startup of Getnet) as a dedicated front-end developer specialized in React. I have been part of a squad focused on products for Mexico, where my routine involved bug resolution, development of new functionalities, attending meetings in Spanish with the Mexican client, coordinating and engaging in peer programming with junior and mid-level developers. This experience also provided me with a close understanding of the daily operations within a financial institution and allowed me to enhance my perception of security, project structure, and squads.',
-    url: 'https://dexian.com/',
+    url: 'https://www.getblend.com/',
   },
   {
-    date: 'Mar 2021 - Dec 2022',
-    icon: <Image className="rounded-full" src="/images/vaiter.webp" width={100} height={100} alt="QYON" />,
-    title: 'Tech Lead Front-End',
-    location: 'QYON Sistemas Inteligentes - Americana/SP, Brazil',
+    date: 'Oct, 2019 - Jul, 2022',
+    icon: <Image className="rounded-full" src="/images/rapid7.png" width={100} height={100} alt="Rapid7" />,
+    title: 'Senior Software Engineer',
+    location: 'Rapid7 - Israel, Tel Aviv / USA, Massachusetts',
     description:
       'Planning and production of new company applications with a focus on accounting software, where I led the squad. Collaborated with the team, primarily using React with Redux, ContextAPI, Web Socket, PDF generation, chat functionality, internationalization, responsive layout design, and integration with external services, among others...',
-    url: 'https://www.qyon.com/',
+    url: 'https://www.rapid7.com/',
   },
   {
-    date: 'May 2020 - Mar 2021',
-    icon: <Image className="rounded-full" src="/images/vaiter.webp" width={100} height={100} alt="Incentiv.me" />,
-    title: 'Full Stack Developer',
-    location: 'Incentiv.me - Florianópolis/SC, Brazil',
+    date: 'Oct, 2018 - Oct, 2019',
+    icon: <Image className="rounded-full" src="/images/lenal.png" width={100} height={100} alt="Lenal" />,
+    title: 'React Front-End Developer',
+    location: 'LENAL - Ukraine, Kiev',
     description:
       'Responsible for planning, production, and maintenance of company applications. Developed using Ruby on Rails, Mithriljs, React, Node, Angular, Laravel, and PostgreSQL. Handled infrastructure demands, data security, payment gateways, integration with external services, compliance with LGPD (General Data Protection Law), and domain management.',
-    url: 'https://incentiv.me/',
+    url: 'https://lenal.eu',
   },
   {
-    date: 'Apr 2019 - May 2020',
-    icon: <Image className="rounded-full" src="/images/vaiter.webp" width={100} height={100} alt="Essystem" />,
-    title: 'Javascript Developer JR / Infrastructure Technician',
-    location: 'Essystem Comercial Automation - Americana/SP, Brazil',
+    date: 'Mar, 2018 - Oct, 2018',
+    icon: <Image className="rounded-full" src="/images/subj.png" width={100} height={100} alt="Subj" />,
+    title: 'React Front-End Developer',
+    location: 'Subj - Ukraine, Kiev',
     description:
       'Infrastructure Leader and JS Developer. Provided in-person assistance and technical support for the system, as well as participated in application development.',
-    url: 'https://essystem.com.br/',
+    url: 'https://subj.ua/',
+  },
+  {
+    date: 'Oct, 2017 - Mar, 2018',
+    icon: <Image className="rounded-full" src="/images/inlimited.png" width={100} height={100} alt="Inlimited" />,
+    title: 'Web Front-End Developer',
+    location: 'Inlimited - Ukraine, Kiev',
+    description:
+      'Infrastructure Leader and JS Developer. Provided in-person assistance and technical support for the system, as well as participated in application development.',
+    url: 'https://www.inlimited.ua',
   },
 ];
 
@@ -163,7 +172,7 @@ const Experience = () => {
           transition={{delay: 1.2, duration: 0.5}}
         >
           <motion.a
-            href="https://drive.google.com/file/d/1DnR_CeUosDWHPn7WQllSQzFEFDoGk7yM/view"
+            href="https://www.linkedin.com/in/larindmitriy/"
             target="_blank"
             rel="noopener noreferrer"
             className="relative inline-flex items-center gap-3 px-8 py-4 bg-violet-900 text-white font-semibold rounded-lg shadow-lg shadow-violet-900/50 overflow-hidden group"
@@ -180,7 +189,7 @@ const Experience = () => {
               whileHover={{x: '100%'}}
               transition={{duration: 0.6}}
             />
-            <span className="relative z-10">View Full Resume</span>
+            <span className="relative z-10">More Here</span>
             <svg
               className="relative z-10 w-5 h-5"
               fill="none"
