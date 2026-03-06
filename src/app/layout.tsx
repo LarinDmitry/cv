@@ -130,6 +130,10 @@ export const metadata: Metadata = {
     canonical: 'https://larindmitry.github.io/cv',
   },
   manifest: '/cv/manifest.json',
+  icons: {
+    icon: '/cv/favicon.ico',
+    shortcut: '/cv/favicon.ico',
+  },
 };
 
 const RootLayout = ({children}: {children: ReactNode}) => (
