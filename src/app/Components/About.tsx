@@ -2,7 +2,6 @@
 import {useAnimation, useInView, motion} from 'framer-motion';
 import {useEffect, useRef} from 'react';
 import Image from 'next/image';
-import {getTotalYearsOfExperience} from '../utils/dateUtils';
 
 // Staggered container for industry cards
 const containerVariants = {
@@ -49,7 +48,6 @@ const About = () => {
   const ref = useRef(null);
   const isInView = useInView(ref, {once: true, margin: '-100px'});
   const mainControls = useAnimation();
-  const yearsOfExperience = getTotalYearsOfExperience();
 
   useEffect(() => {
     isInView && mainControls.start('visible');

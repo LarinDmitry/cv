@@ -129,14 +129,13 @@ export const metadata: Metadata = {
   alternates: {
     canonical: 'https://larindmitry.github.io/cv',
   },
+  manifest: '/cv/manifest.json',
 };
 
 const RootLayout = ({children}: {children: ReactNode}) => (
   <html lang="en" suppressHydrationWarning>
     <head>
-      <link rel="manifest" href="/manifest.json" />
       <meta name="theme-color" content="#7C3AED" />
-      <title>Tech Lead Front-End</title>
     </head>
     <body className={roboto.className} suppressHydrationWarning>
       {children}

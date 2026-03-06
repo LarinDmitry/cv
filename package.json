@@ -5,10 +5,11 @@
   "private": true,
   "type": "module",
   "scripts": {
-    "start": "next dev",
-    "build": "tsc -b && next build",
-    "predeploy": "npm run build && copy dist\\index.html dist\\404.html",
-    "deploy": "gh-pages -d dist",
+    "dev": "next dev",
+    "build": "next build",
+    "start": "next start",
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d out",
     "lint": "next lint"
   },
   "dependencies": {
