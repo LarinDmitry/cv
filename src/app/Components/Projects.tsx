@@ -26,36 +26,35 @@ const Projects = () => {
 
   const projects = [
     {
-      name: 'Vaiter',
-      icon: '/images/vaiter.webp',
-      description:
-        'A leading Irish digital health company powering connected patient solutions for global health systems, providers and bio-pharma & med-tech companies.',
-      url: 'https://vaiter.app/',
-      tags: ['Tech Lead', 'React', 'GovTech'],
-    },
-    {
       name: 'Smereka (MVP)',
       icon: '/images/smereka.png',
       description:
-        'Developed an ecosystem platform connecting businesses and socio-environmental projects through fiscal incentive laws, creating positive social impact.',
+        "Specialized information and communication system implemented in the prosecutor's office and law enforcement agencies of Ukraine for electronic management of criminal proceedings",
       url: 'https://front-dev.k8s-dev.deving.eu/',
-      tags: ['Tech Lead', 'React', 'E-commerce'],
+      tags: ['Tech Lead', 'React', 'RTK', 'TypeScript', 'Vite', 'GovTech'],
     },
     {
-      name: 'Rapid7',
-      icon: '/images/rapid7.png',
-      description:
-        "Built innovative payment solutions for PagoNxt, Santander's global paytech business, providing integrated payment processing and financial services.",
-      url: 'https://www.rapid7.com/products/insightcloudsec/',
-      tags: ['Front-End', 'React', 'DevSecOps'],
+      name: 'Vaiter',
+      icon: '/images/vaiter.webp',
+      description: 'Food service establishments that automates and speeds up the work of cafes and restaurants',
+      url: 'https://vaiter.app/',
+      tags: ['Tech Lead', 'React', 'RTK', 'TypeScript',  'Vite', 'FoodTech'],
     },
     {
       name: 'Blend ',
       icon: '/images/blend.png',
       description:
-        'Developed AI-powered business management solutions integrating artificial intelligence across all enterprise processes and sectors.',
+        'An international company providing comprehensive services for localization, translation, and adaptation of content for global brands',
       url: 'https://app.getblend.com/',
-      tags: ['Front-End', 'React', 'E-commerce'],
+      tags: ['Front-End', 'React', 'TypeScript', 'Mobx', 'E-commerce'],
+    },
+    {
+      name: 'Rapid7',
+      icon: '/images/rapid7.png',
+      description:
+        'Tools empowers teams to proactively manage risk, accelerate DevSecOps, and enforce compliance across cloud envs',
+      url: 'https://www.rapid7.com/products/insightcloudsec/',
+      tags: ['Front-End', 'React', 'GraphQl', 'DevSecOps'],
     },
   ];
 

@@ -13,7 +13,7 @@ const experiencesData = [
     title: 'Tech Lead Front-End',
     location: 'Mascode - Ukraine, Kiev',
     description:
-      'Working as a lead Front-end specialist with the React stack, developing new features, implementing improvements, and solving bugs for a healthcare platform used by hospitals and clinics. Proficient with AI tools such as Claude code assistant, and similar technologies. My routine includes attending meetings, understanding the customer requirements, and collaborating with the team to find the best approach for each situation.',
+      'As a Frontend Tech Lead, I defined the architecture and technical direction of a large-scale React platform, establishing scalable patterns for state management, data fetching, and application structure using TypeScript, Redux Toolkit, and React Query. I introduced a microfrontend architecture that enabled independent development across teams and improved the scalability of the product. In addition to application architecture, I helped build a sustainable frontend platform by improving build tooling with Vite, developing shared UI components based on Material UI and styled-components, and introducing engineering standards that improved code quality and maintainability. I also mentored engineers, led code reviews, and collaborated closely with product and backend teams to ensure technical decisions supported long-term product growth and performance',
     url: 'https://mascode.com/',
   },
   {
@@ -22,7 +22,7 @@ const experiencesData = [
     title: 'Tech Lead Front-End',
     location: 'BLEND Localization - Israel, Tel Aviv',
     description:
-      'Working at the external client Pagonxt (a global startup of Getnet) as a dedicated front-end developer specialized in React. I have been part of a squad focused on products for Mexico, where my routine involved bug resolution, development of new functionalities, attending meetings in Spanish with the Mexican client, coordinating and engaging in peer programming with junior and mid-level developers. This experience also provided me with a close understanding of the daily operations within a financial institution and allowed me to enhance my perception of security, project structure, and squads.',
+      'In this role, I led frontend development for a large-scale e-commerce platform built with React and TypeScript, focusing on creating a stable and scalable foundation for complex product and checkout flows. I established consistent patterns for application structure and state management using Redux Toolkit, helping the team maintain clarity and maintainability as the codebase and feature set expanded. A significant part of the work involved integrating with external payment systems and ensuring reliable communication between the frontend and payment providers to support secure and seamless checkout experiences. I also improved the frontend platform by modernizing the build pipeline with Vite, developing reusable UI components with Material UI and styled-components, and introducing engineering standards that strengthened code quality and long-term maintainability. Alongside the technical direction, I mentored engineers, led code reviews, and worked closely with product and backend teams to deliver features that supported the growth and reliability of the e-commerce platform',
     url: 'https://www.getblend.com/',
   },
   {
@@ -31,7 +31,7 @@ const experiencesData = [
     title: 'Senior Software Engineer',
     location: 'Rapid7 - Israel, Tel Aviv / USA, Massachusetts',
     description:
-      'Planning and production of new company applications with a focus on accounting software, where I led the squad. Collaborated with the team, primarily using React with Redux, ContextAPI, Web Socket, PDF generation, chat functionality, internationalization, responsive layout design, and integration with external services, among others...',
+      'As a Senior Frontend Engineer, I worked on a DevSecOps focused platform, building complex and highly interactive interfaces using React and TypeScript. A significant part of the work involved developing advanced data visualizations and monitoring dashboards, including both custom-built and library-based charts, with extensive use of Canvas to handle large data sets and real-time updates. I also implemented complex data-heavy interfaces such as configurable tables, forms, and management panels using Formik and Yup for form state and validation. The role required close collaboration with backend and DevOps teams to translate infrastructure and security data into clear, reliable UI workflows, while maintaining performance and stability in a feature-rich application',
     url: 'https://www.rapid7.com/',
   },
   {
@@ -40,7 +40,7 @@ const experiencesData = [
     title: 'React Front-End Developer',
     location: 'LENAL - Ukraine, Kiev',
     description:
-      'Responsible for planning, production, and maintenance of company applications. Developed using Ruby on Rails, Mithriljs, React, Node, Angular, Laravel, and PostgreSQL. Handled infrastructure demands, data security, payment gateways, integration with external services, compliance with LGPD (General Data Protection Law), and domain management.',
+      'Contributed to the development of a banking web application using React, building reliable and user-focused interfaces for financial operations and account management. Implemented interactive UI components, handled complex form logic, and integrated frontend functionality with backend services to support secure and stable transactional workflows',
     url: 'https://lenal.eu',
   },
   {
@@ -49,7 +49,7 @@ const experiencesData = [
     title: 'React Front-End Developer',
     location: 'Subj - Ukraine, Kiev',
     description:
-      'Infrastructure Leader and JS Developer. Provided in-person assistance and technical support for the system, as well as participated in application development.',
+      'Develop a client-side platform for a marketplace between a buyer and a verified beauty expert (diplomas, education, etc.)',
     url: 'https://subj.ua/',
   },
   {
@@ -58,7 +58,7 @@ const experiencesData = [
     title: 'Web Front-End Developer',
     location: 'Inlimited - Ukraine, Kiev',
     description:
-      'Infrastructure Leader and JS Developer. Provided in-person assistance and technical support for the system, as well as participated in application development.',
+      'Developed a custom platform for analyzing social media content, enabling the tracking of keyword occurrences across posts and messages. The system also included emotional analysis capabilities and provided analytics dashboards for monitoring trends, user behavior, and message statistics based on the collected data',
     url: 'https://www.inlimited.ua',
   },
 ];
@@ -189,7 +189,7 @@ const Experience = () => {
               whileHover={{x: '100%'}}
               transition={{duration: 0.6}}
             />
-            <span className="relative z-10">More Here</span>
+            <span className="relative z-10">Full Experience List</span>
             <svg
               className="relative z-10 w-5 h-5"
               fill="none"
