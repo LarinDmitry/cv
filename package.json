@@ -1,11 +1,14 @@
 {
-  "name": "next-portfolio",
+  "homepage": "https://larindmitry.github.io/cv/",
+  "name": "cv",
   "version": "1.0.0",
   "private": true,
+  "type": "module",
   "scripts": {
-    "dev": "next dev",
-    "build": "next build",
-    "start": "next start",
+    "start": "next dev",
+    "build": "tsc -b && next build",
+    "predeploy": "npm run build && copy dist\\index.html dist\\404.html",
+    "deploy": "gh-pages -d dist",
     "lint": "next lint"
   },
   "dependencies": {
